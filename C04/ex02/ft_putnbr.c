@@ -33,7 +33,7 @@ void	ft_putnbr(int nb)
 	}
 	if (nb < 10)
 	{
-		ft_putchar(nb + 48);
+		ft_putchar(nb + '0');
 		return ;
 	}
 	else
