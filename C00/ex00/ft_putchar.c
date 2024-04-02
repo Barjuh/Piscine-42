@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbourach <mbourach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/13 20:28:57 by mbourach          #+#    #+#             */
-/*   Updated: 2024/03/14 16:08:01 by mbourach         ###   ########.fr       */
+/*   Created: 2024/03/23 11:04:38 by mbourach          #+#    #+#             */
+/*   Updated: 2024/03/23 11:10:35 by mbourach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,10 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 /*
-int	main(void)
-
+int	main(int argc, char **argv)
 {
-	char	letter;
+	if (argc != 2)
+		return (1);
 
-	letter = 'e';
-	ft_putchar(letter);
-	return (0);
+	ft_putchar(*argv[1]);
 }*/

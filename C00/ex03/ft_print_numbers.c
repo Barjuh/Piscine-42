@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbourach <mbourach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/14 16:26:12 by mbourach          #+#    #+#             */
-/*   Updated: 2024/03/14 17:52:09 by mbourach         ###   ########.fr       */
+/*   Created: 2024/03/23 11:37:17 by mbourach          #+#    #+#             */
+/*   Updated: 2024/03/23 11:43:05 by mbourach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,18 @@
 
 void	ft_putchar(char c)
 {
-	write (1, &c, 1);
+	write(1, &c, 1);
 }
 
 void	ft_print_numbers(void)
 {
-	char	number;
+	char	n;
 
-	number = '0';
-	while (number <= '9')
+	n = '0';
+	while (n <= '9')
 	{
-		ft_putchar(number);
-		number++;
+		ft_putchar(n);
+		n++;
 	}
 }
 /*

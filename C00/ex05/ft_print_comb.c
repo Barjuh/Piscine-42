@@ -5,47 +5,52 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbourach <mbourach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/13 20:28:57 by mbourach          #+#    #+#             */
-/*   Updated: 2024/03/15 09:47:26 by mbourach         ###   ########.fr       */
+/*   Created: 2024/03/23 15:48:29 by mbourach          #+#    #+#             */
+/*   Updated: 2024/03/23 17:22:31 by mbourach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_3num(char a, char b, char c)
+void	ft_put3num(char a, char b, char c)
 {
 	write(1, &a, 1);
 	write(1, &b, 1);
 	write(1, &c, 1);
-	if (a != '7' || b != '8' || c != '9')
+	if ((a != '7') || (b != '8') || (c != '9'))
 	{
 		write(1, ", ", 2);
 	}
 }
 
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
+
 void	ft_print_comb(void)
 {
-	char	d;
-	char	e;
-	char	f;
+	char	a;
+	char	b;
+	char	c;
 
-	d = '0';
-	while (d <= '7')
+	a = '0';
+	while (a <= '7')
 	{
-		e = d + 1;
-		while (e <= '8')
+		b = a + 1;
+		while (b <= '8')
 		{
-			f = e + 1;
-			while (f <= '9')
+			c = b + 1;
+			while (c <= '9')
 			{
-				ft_3num(d, e, f);
-				f++;
+				ft_put3num(a, b, c);
+				c++;
 			}
-			e++;
+			b++;
 		}
-		d++;
+		a++;
 	}
-}
+}	
 /*
 int	main(void)
 {

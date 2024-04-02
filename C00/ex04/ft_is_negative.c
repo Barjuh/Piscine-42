@@ -5,44 +5,32 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbourach <mbourach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/14 17:53:56 by mbourach          #+#    #+#             */
-/*   Updated: 2024/03/14 19:11:53 by mbourach         ###   ########.fr       */
+/*   Created: 2024/03/23 11:43:51 by mbourach          #+#    #+#             */
+/*   Updated: 2024/03/23 15:45:25 by mbourach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+/*#include <stdlib.h>*/
 
 void	ft_putchar(char c)
 {
-	write (1, &c, 1);
+	write(1, &c, 1);
 }
 
 void	ft_is_negative(int n)
 {
-	char	np;
-
 	if (n < 0)
-	{
-		np = 'N';
-	}
+		ft_putchar('N');
 	else
-	{
-		np = 'P';
-	}
-	ft_putchar(np);
+		ft_putchar('P');
 }
 /*
-int	main(void)
+int	main(int argc, char **argv)
 {
-	int	number;
+	if (argc != 2)
+		return (1);
 
-	number = 25;
-	ft_is_negative(number);
-	number = -95;
-	ft_is_negative(number);
-	number = 50;
-	ft_is_negative(number);
-	number = -63;
-	ft_is_negative(number);
+	ft_is_negative(atoi(argv[1]));
 	return (0);
 }*/

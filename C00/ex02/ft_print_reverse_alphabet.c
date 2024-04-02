@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbourach <mbourach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/14 16:01:53 by mbourach          #+#    #+#             */
-/*   Updated: 2024/03/14 16:27:07 by mbourach         ###   ########.fr       */
+/*   Created: 2024/03/23 11:27:15 by mbourach          #+#    #+#             */
+/*   Updated: 2024/03/23 11:42:49 by mbourach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,13 @@ void	ft_putchar(char c)
 
 void	ft_print_reverse_alphabet(void)
 {
-	char	reverse;
+	char	z;
 
-	reverse = 'z';
-	while (reverse >= 'a')
+	z = 'z';
+	while (z >= 'a')
 	{
-		ft_putchar(reverse);
-		reverse--;
+		ft_putchar(z);
+		z--;
 	}
 }
 /*
