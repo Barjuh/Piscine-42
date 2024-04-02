@@ -66,7 +66,7 @@ void	ft_putnbr_base(int nbr, char *base)
 {
 	ft_putllnbr_base(nbr, base);
 }
-/*
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -77,4 +77,4 @@ int	main(int argc, char **argv)
 	printf("%d en base %s donne :\n", atoi(argv[1]), argv[2]);
 	ft_putnbr_base(atoi(argv[1]), argv[2]);
 	return (0);
-}*/
+}
